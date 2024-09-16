@@ -3,8 +3,8 @@
 using namespace std;
 
 void printKMax(int arr[], int n, int k){
-    deque<int> dq;
-    for(int i = 0; i < k; ++i){
+    deque<int> dq;  //created dequeue
+    for(int i = 0; i < k; ++i){ //i to k elements
         while(!dq.empty() && arr[i] >= arr[dq.back()]){
             dq.pop_back();
         }
