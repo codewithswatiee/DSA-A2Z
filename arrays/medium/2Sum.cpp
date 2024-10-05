@@ -2,6 +2,8 @@
 using namespace std;
 
 
+
+// optimal approach
 vector<int> twosum(vector<int> &arr, int n, int target){
     vector<pair<int, int>> indexedArr;
     for(int i = 0; i < n; i++){
